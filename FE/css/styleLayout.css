@@ -159,7 +159,16 @@ body {
     text-align: center;
 }
 
+#menu nav {
+    position: fixed;
+    z-index: 50;
+}
+
+
 /* banner */
+#banner{
+    margin-top: 80px;
+}
 
 .banner-regular {
     margin: 0 auto;
@@ -217,9 +226,17 @@ body {
 @media (min-width: 576px) { 
 
 
-
 }
 @media (min-width: 768px) {
+/*    menu*/
+    #menu nav {
+        position: relative;
+        z-index: 5;
+    }
+    #banner{
+        margin-top: 0;
+    }
+    
     .slick-next {
         left: 95%;
     }
@@ -347,5 +364,8 @@ body {
     #menu nav ul li a {
         font-size: 1rem;
     }
+    
 }
-@media (max-width: 1199.98px) {}
+@media (max-width: 1199.98px) {
+    
+}
